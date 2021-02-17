@@ -1,6 +1,5 @@
-Simple, given a string of words, return the length of the shortest word(s).
-
-String will never be empty and you do not need to account for different data types.
+# Simple, given a string of words, return the length of the shortest word(s).
+# String will never be empty and you do not need to account for different data types.
 
 def find_short(s):
     list = s.split(' ') # Splits the original string after every space to give list of words in str.
