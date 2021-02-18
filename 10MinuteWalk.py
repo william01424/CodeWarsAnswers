@@ -16,3 +16,4 @@ def is_valid_walk(walk):
         if walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w'):   # Number of n and s ; e and w must be the same if start == finish.
             return True   # return true once conditions are met else return false.
         else: return False
+    else: return False
