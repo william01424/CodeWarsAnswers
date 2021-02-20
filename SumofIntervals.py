@@ -17,3 +17,16 @@ def sum_of_intervals(intervals):
         if i not in RangeNums:
             RangeNums.append(i)
     return len(RangeNums)   # Return the length of the RangeNums list to get final answer
+
+
+# NOTE: you can set start stop from the layout of the index itself (See below):
+
+def sum_of_intervals(intervals):
+    list = []
+    for start, stop in intervals:       # Becuase index is in form [x1, x2] - we can say for x1, x2 in intervals do this i.e. we can assign values in the for loop statement
+        list.extend(range(start, stop)) # rather than after. This makes the code 'cleaner'. In this case we assign start, stop as th
+    RangeNums = []                      # range() >> range(start,stop,increment[set to 1 by default])
+    for i in list:
+        if i not in RangeNums:
+            RangeNums.append(i)
+    return len(RangeNums)
