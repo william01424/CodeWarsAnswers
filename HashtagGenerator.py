@@ -15,3 +15,13 @@ def generate_hashtag(s):
     s = s.replace(" ","")   # Replaces spaces with nothing.
     hash = '#' + s    # Add '#' to s and return hash (the final answer)
     return hash
+
+
+# Please see this cleaner response:
+'''
+This solution combines the string actions together s.action1().action2().
+It also has both conditions into one inequality i.e. 0<len(s)<=140
+All code is condensed to one line.
+'''
+def generate_hashtag(s): return '#' +s.title().replace(' ','') if 0<len(s)<=140 else False
+
