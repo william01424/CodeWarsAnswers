@@ -45,7 +45,7 @@ def get_pins(observed):   # Creating a dictionary to give list of all the possib
                '9': ['9','6','8'],
                '0': ['0','8']
                }
-    x = [PINdict [i] for i in observed]   # Generates a list of the PINdict.value() for each character in observed. i.e. if obs contains '1', list will include ['1', '2', '4'].
+    x = [PINdict[i] for i in observed]   # Generates a list of the PINdict.value() for each character in observed. i.e. if obs contains '1', list will include ['1', '2', '4'].
     combinations = list(itertools.product(*x))    # Generate list of all combinations of every index in x (*x).
     PINS = [''.join(x) for x in combinations]   # Joins strings to make one list of pins.
     return PINS
