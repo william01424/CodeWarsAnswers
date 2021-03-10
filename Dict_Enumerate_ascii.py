@@ -16,7 +16,9 @@ def alphabet_position(text):
     from string import ascii_lowercase
     text = text.lower()   # Convert all text to lower case (upper case has different ascii code)
 
-    Characters = {character : str(index) for index, character in enumerate(ascii_lowercase, start = 1)}   # Creates dict from ascii lowercase and uses enum to assign values from 1
+    Characters = {character : str(index) for index, character in enumerate(ascii_lowercase, start = 1)}   
+    # Creates dict from ascii lowercase and uses enum to assign values from 1
+    
     nums = [Characters[character] for character in text if character in Characters]   # List comp - Characters[character] == value
     return ' '.join(nums)   # Rejoin list to str
   
