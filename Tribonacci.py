@@ -41,3 +41,11 @@ def tribonacci(signature, n):
         cycle += 1
 
     return answer
+
+# See more refined solution.
+
+def tribonacci(signature,n):
+    while len(signature) < n:
+        signature.append(sum(signature[-3:]))
+    
+    return signature[:n]
