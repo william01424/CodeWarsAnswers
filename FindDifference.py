@@ -18,7 +18,7 @@ def find_difference(a, b):
         volume_b *= i
     return abs(volume_a - volume_b)
 
-# See top answer makes use of mumpy prod to reduce this to one line
+# See top answer makes use of mumpy prod to reduce this to one line.
 
 from numpy import prod
 
